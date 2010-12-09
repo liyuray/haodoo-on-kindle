@@ -34,7 +34,21 @@ for (1..15) {
 	$plain_text =~ s/－－/――/g;
 	$plain_text =~ s/——/――/g;
 	$plain_text =~ s/｜｜/――/g;
+	$plain_text =~ s/｜/―/g;
 	$plain_text =~ s/•/・/g;
+	$plain_text =~ s/‧/・/g;
+	$plain_text =~ s/值/値/g;
+	$plain_text =~ s/剎/刹/g;
+	$plain_text =~ s/污/汚/g;
+	$plain_text =~ s/夠/彀/g;
+	$plain_text =~ s/拋/抛/g;
+	$plain_text =~ s/查/査/g;
+	$plain_text =~ s/鄉/郷/g;
+	$plain_text =~ s/躲/躱/g;
+	$plain_text =~ s/喻/喩/g;
+	$plain_text =~ s/拋/抛/g;
+	$plain_text =~ s/啟/啓/g;
+
 #	$plain_text = simp_to_trad($plain_text);
 	print $/,'\newpage',$/;
 	print
