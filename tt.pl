@@ -43,7 +43,7 @@ for (1..15) {
 										  $plain_encoding,
 										  $plain_text,
 										  #			Encode::FB_PERLQQ
-										  sub { sprintf "\\UTFT{%X}",$_[0]	}
+										  sub { sprintf "\\UTF{%X}",$_[0]	}
 									  )
 								  ));
 #	print $plain_text;
