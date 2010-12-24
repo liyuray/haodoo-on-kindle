@@ -6,6 +6,9 @@ use Encode;
 #use Encode::HanConvert;
 use utf8;
 
+$SIG{__DIE__}  = sub { Carp::confess(@_) };
+$SIG{__WARN__} = sub { Carp::cluck(@_) };
+
 my $text_encoding = "euc-jp";
 my $plain_encoding = "sjis";
 #my $encoding = "ascii";
